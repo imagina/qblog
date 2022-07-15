@@ -135,6 +135,20 @@ export default {
               rows: 2,
             }
           },
+          metaKeywords: {
+            value: null,
+            type: 'select',
+            isTranslatable: true,
+            props: {
+              label: "Meta Keywords",
+              useInput: true,
+              useChips: true,
+              multiple: true,
+              hideDropdownIcon: true,
+              inputDebounce: "0",
+              newValueMode: "add-unique"
+            }
+          },
           mediasMulti: {
             value: {},
             type: 'media',
