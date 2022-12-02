@@ -231,6 +231,7 @@ export default {
           status: {
             value: '2',
             type: 'select',
+            isTranslatable: true,
             props: {
               label: this.$tr('isite.cms.form.status'),
               options: [
