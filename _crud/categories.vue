@@ -115,7 +115,7 @@ export default {
           status: {
             value: '1',
             type: 'select',
-            isTranslatable: false,
+            isTranslatable: true,
             props: {
               label: `${this.$tr('isite.cms.form.status')}*`,
               options: [
