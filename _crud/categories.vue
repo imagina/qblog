@@ -25,7 +25,13 @@ export default {
             {name: 'id', label: this.$tr('isite.cms.form.id'), field: 'id', style: 'width: 50px'},
             {name: 'name', label: this.$tr('isite.cms.form.title'), field: 'title', align: 'rigth'},
             {name: 'slug', label: this.$tr('isite.cms.form.slug'), field: 'slug', align: 'left'},
-            {name: 'status', label: this.$tr('isite.cms.form.status'), field: 'status', align: 'left'},
+            {
+              name: 'status',
+              label: this.$tr('isite.cms.form.status'),
+              field: 'status',
+              align: 'left',
+              isTranslatable: true
+            },
             {
               name: 'parent', label: this.$tr('isite.cms.form.parent'), field: 'parent', align: 'left',
               format: val => val ? (val.title ? val.title : '-') : '-'
@@ -113,18 +119,16 @@ export default {
         },
         formRight: {
           status: {
-            value: '1',
-            type: 'select',
+            value: 1,
+            type: 'treeSelect',
             isTranslatable: true,
             props: {
-              label: `${this.$tr('isite.cms.form.status')}*`,
+              label: `${this.$tr('isite.cms.form.status')}`,
+              clearable : false,
               options: [
-                {label: this.$tr('isite.cms.label.enabled'), value: '1'},
-                {label: this.$tr('isite.cms.label.disabled'), value: '0'}
-              ],
-              rules: [
-                val => !!val || this.$tr('isite.cms.message.fieldRequired')
-              ],
+                {label: this.$tr('isite.cms.label.enabled'), id: 1},
+                {label: this.$tr('isite.cms.label.disabled'), id: 0}
+              ]
             }
           },
           masterRecord: {
