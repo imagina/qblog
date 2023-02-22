@@ -261,7 +261,7 @@ export default {
           tags: {
             value: [],
             type: 'select',
-            isTranslatable: true,
+            //isTranslatable: true,
             props: {
               label: this.$trp('isite.cms.form.tag'),
               useInput: true,
