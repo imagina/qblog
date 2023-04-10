@@ -83,6 +83,7 @@
         this.$crud.index('apiRoutes.qblog.posts', parameters).then((response) => {
           this.posts = response.data
         }).catch(error => {
+          this.$apiResponse.handleError(error, () => {})
         })
       }
     }
