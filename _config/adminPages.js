@@ -9,7 +9,7 @@ export default {
     page: () => import('@imagina/qcrud/_pages/admin/crudPage'),
     layout: () => import('@imagina/qsite/_layouts/master.vue'),
     title: 'iblog.cms.sidebar.adminPosts',
-    icon: 'fas fa-newspaper',
+    icon: 'fa-light fa-newspaper',
     subHeader: {
       refresh: true,
     }
@@ -24,7 +24,7 @@ export default {
     page: () => import('@imagina/qcrud/_pages/admin/crudPage'),
     layout: () => import('@imagina/qsite/_layouts/master.vue'),
     title: 'iblog.cms.sidebar.adminCategories',
-    icon: 'fas fa-layer-group',
+    icon: 'fa-light fa-layer-group',
     subHeader: {
       refresh: true,
     }
@@ -38,7 +38,7 @@ export default {
     page: () => import('@imagina/qblog/_pages/admin/posts/internal'),
     layout: () => import('@imagina/qsite/_layouts/master.vue'),
     title: 'iblog.cms.sidebar.adminPostsInternal',
-    icon: 'far fa-newspaper',
+    icon: 'fa-light fa-newspaper',
     subHeader: {
       refresh: true,
     }
