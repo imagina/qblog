@@ -107,6 +107,7 @@ export default {
             },
           },
           description: {
+            name : "description",
             value: '',
             type: 'html',
             isTranslatable: true,
