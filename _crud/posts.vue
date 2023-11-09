@@ -37,6 +37,12 @@ export default {
               sortable: true,
             },
             {
+              name: 'statusName',
+              label: this.$tr('isite.cms.form.status'),
+              field: 'statusName',
+              align: 'left', sortable: true
+            },
+            {
               name: 'category', label: this.$tr('isite.cms.form.category'),
               align: 'left', field: 'category', sortable: true,
               format: val => ((val && val.title) ? val.title : '-')
@@ -61,7 +67,18 @@ export default {
               loadOptions: {
                 apiRoute: 'apiRoutes.qblog.categories'
               }
-            }
+            },
+            status: {
+              value: null,
+              type: 'select',
+              props: {
+                label: this.$tr('isite.cms.form.status'),
+                clearable: true
+              },
+              loadOptions: {
+                apiRoute: 'apiRoutes.qblog.statuses'
+              }
+            },
           }
         },
         update: {
@@ -235,13 +252,10 @@ export default {
             isTranslatable: true,
             props: {
               label: this.$tr('isite.cms.form.status'),
-              options: [
-                {label: this.$tr('isite.cms.form.publish'), value: '2'},
-                {label: this.$tr('isite.cms.form.noPublish'), value: '3'},
-                {label: this.$tr('isite.cms.form.draft'), value: '0'},
-                {label: this.$tr('isite.cms.form.pending'), value: '1'}
-              ]
             },
+            loadOptions: {
+              apiRoute: 'apiRoutes.qblog.statuses'
+            }
           },
 
           sortOrder: {
