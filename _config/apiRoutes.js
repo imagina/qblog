@@ -8,4 +8,5 @@ export default {
   version: moduleVersion,
   categories: `${urlBase}/categories`,
   posts: `${urlBase}/posts`,
+  statuses: `${urlBase}/statuses`
 }
