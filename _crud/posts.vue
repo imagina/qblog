@@ -56,7 +56,7 @@ export default {
               name: 'actions', label: this.$tr('isite.cms.form.actions'), align: 'center'
             },
           ],
-          requestParams: {include: 'category'},
+          requestParams: {include: 'category,qrs'},
           filters: {
             categories: {
               value: null,
