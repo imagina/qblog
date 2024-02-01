@@ -90,7 +90,7 @@
 
   }
 </script>
-<style lang="sass">
+<style lang="scss">
   #postComponent
     text-align center
 

@@ -38,7 +38,7 @@
 
   }
 </script>
-<style lang="sass">
+<style lang="scss">
   #bannerIblog
     background-color $grey-2
     background-size cover
