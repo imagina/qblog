@@ -64,7 +64,7 @@
 
   }
 </script>
-<style lang="stylus">
+<style lang="sass">
   #serviciosComponent
     width 100%
     position relative

@@ -58,7 +58,7 @@
 
   }
 </script>
-<style lang="stylus">
+<style lang="sass">
   #breadcrumComponent
     @media screen and (max-width: $breakpoint-md)
       overflow-x scroll

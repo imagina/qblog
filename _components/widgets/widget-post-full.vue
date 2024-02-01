@@ -43,7 +43,7 @@
   }
 </script>
 
-<style lang="stylus">
+<style lang="sass">
   .menu-title a
     display inline-block
     padding 0 0 5px

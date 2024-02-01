@@ -163,7 +163,7 @@ export default {
   }
 }
 </script>
-<style lang="stylus">
+<style lang="sass">
 #postInternalPage, #modalPost
   .post-card
     .post-card__image
