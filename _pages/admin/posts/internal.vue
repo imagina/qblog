@@ -164,32 +164,42 @@ export default {
 }
 </script>
 <style lang="scss">
-#postInternalPage, #modalPost
-  .post-card
-    .post-card__image
-      height 250px
-      width 100%
-      border-radius 0
+#postInternalPage, #modalPost {
+  .post-card {
+    .post-card__image {
+      height: 250px;
+      width: 100%;
+      border-radius: 0;
+    }
 
-    .post-card__title
-      line-height 1
-      min-height 40px
+    .post-card__title {
+      line-height: 1;
+      min-height: 40px;
+    }
 
-    .post-card__subtitle
-      color $grey-7
+    .post-card__subtitle {
+      color: $grey-7;
+    }
 
-    .post-card__description
-      overflow hidden
+    .post-card__description {
+      overflow: hidden;
+    }
+  }
 
-#modalPost
-  #cardModalPost
-    max-width 900px
+  #modalPost {
+    #cardModalPost {
+      max-width: 900px;
+    }
 
-  #modalPostInfo
-    max-height calc(100vh - 100px)
-    overflow-y scroll
+    #modalPostInfo {
+      max-height: calc(100vh - 100px);
+      overflow-y: scroll;
 
-    img
-      max-width 100%
-      max-height 300px
+      img {
+        max-width: 100%;
+        max-height: 300px;
+      }
+    }
+  }
+}
 </style>
