@@ -10,7 +10,7 @@ export default {
     {
       active: true,
       permission: 'iblog.posts.manage',
-      component: () => import('@imagina/qblog/_components/quick-cards/lastPosts')
+      component: () => import('modules/qblog/_components/quick-cards/lastPosts')
     }
   ]
 }
