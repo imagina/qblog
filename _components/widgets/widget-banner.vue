@@ -17,7 +17,7 @@
 </template>
 <script>
   /*Components*/
-  import breadcrumComponent from '@imagina/qblog/_components/widgets/widget-breadcrum'
+  import breadcrumComponent from 'modules/qblog/_components/widgets/widget-breadcrum'
 
   export default {
     props: {

@@ -196,7 +196,7 @@ export default {
             type: 'crud',
             props: {
               type: 'select',
-              crudData: import('@imagina/quser/_crud/users'),
+              crudData: import('modules/quser/_crud/users'),
               crudProps: {
                 label: `${this.$tr('isite.cms.form.author')}*`,
                 rules: [
@@ -214,7 +214,7 @@ export default {
             type: 'crud',
             props: {
               crudType: 'select',
-              crudData: import('@imagina/qblog/_crud/categories'),
+              crudData: import('modules/qblog/_crud/categories'),
               customData: {
                 read: {
                   requestParams: {include: 'parent', filter: {status: 1}}
@@ -233,7 +233,7 @@ export default {
             type: 'crud',
             props: {
               crudType: 'select',
-              crudData: import('@imagina/qblog/_crud/categories'),
+              crudData: import('modules/qblog/_crud/categories'),
               customData: {
                 read: {
                   requestParams: {include: 'parent', filter: {status: 1}}
