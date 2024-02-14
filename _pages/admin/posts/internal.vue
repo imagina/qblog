@@ -5,7 +5,7 @@
       <!--Search-->
       <div class="full-width row">
         <dynamic-field v-model="search" :field="searchField" class="col-12 col-md-4 col-xl-3"
-                       @input="getData()"/>
+                       @update:modelValue="getData()"/>
       </div>
       <!--posts-->
       <div id="usersContent" class="q-py-lg row q-col-gutter-lg">
@@ -34,7 +34,7 @@
       <!--Pagination-->
       <div class="row justify-end full-width">
         <q-pagination v-model="pagination.page" :max="pagination.lastPage" input color="grey-9"
-                      @input="(page) => {pagination.page = page; getData()}"/>
+                      @update:modelValue="(page) => {pagination.page = page; getData()}"/>
       </div>
       <!--Modal post-->
       <q-dialog id="modalPost" v-model="modal.show">
