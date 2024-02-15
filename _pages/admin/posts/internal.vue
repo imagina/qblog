@@ -18,7 +18,7 @@
           <q-card class="post-card no-shadow cursor-pointer" bordered @click="modal.post = post, modal.show = true">
             <!---Image-->
             <div class="post-card__image img-as-bg"
-                 :style="`background-image: url('${post.mediaFiles.mainimage.mediumThumb}')`"></div>
+                 :style="`background-image: url('${post?.mediaFiles?.mainimage.mediumThumb}')`"></div>
             <!--Title and subtitle-->
             <q-card-section>
               <div class="post-card__title text-h6 ellipsis-2-lines q-mb-sm">{{ post.title }}</div>
@@ -51,7 +51,7 @@
             <q-card class="post-card no-shadow" v-if="modal.post">
               <!---Image-->
               <div class="post-card__image img-as-bg"
-                   :style="`background-image: url('${modal.post.mediaFiles.mainimage.mediumThumb}')`"></div>
+                   :style="`background-image: url('${modal.post?.mediaFiles?.mainimage.mediumThumb}')`"></div>
               <!--Title and subtitle-->
               <q-card-section>
                 <div class="post-card__title text-h6 ellipsis-2-lines q-mb-sm">{{ modal.post.title }}</div>

@@ -30,7 +30,7 @@ export default {
           filter: {order: {way: 'desc'}}
         },
         information: {
-          image: {field: 'mediaFiles', format: val => val ? val.mainimage.mediumThumb : null},
+          image: {field: 'mediaFiles', format: val => val ? val?.mainimage.mediumThumb : null},
           text1: {field: 'createdAt', format: val => this.$trd(val)},
           text2: {field: 'title'},
           text3: {field: 'summary'},
