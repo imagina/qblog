@@ -88,7 +88,7 @@ export default {
             }
           },
           description: {
-            name : "description",
+            name: "description",
             value: '',
             type: 'html',
             isTranslatable: true,
@@ -125,7 +125,7 @@ export default {
             isTranslatable: true,
             props: {
               label: `${this.$tr('isite.cms.form.status')}`,
-              clearable : false,
+              clearable: false,
               options: [
                 {label: this.$tr('isite.cms.label.enabled'), id: 1},
                 {label: this.$tr('isite.cms.label.disabled'), id: 0}
@@ -157,6 +157,31 @@ export default {
               apiRoute: 'apiRoutes.qblog.categories',
               select: {label: 'title', id: 'id'},
               requestParams: {include: 'parent', filter: {status: 1}}
+            }
+          },
+          layoutType: {
+            name: 'type',
+            value: 'general',
+            fakeFieldName: 'buildable',
+          },
+          layoutBuilder: {
+            value: null,
+            type: 'select',
+            name: 'layoutId',
+            fakeFieldName: 'buildable',
+            props: {
+              label: this.$tr('ibuilder.cms.form.layout'),
+              clearable: true,
+            },
+            loadOptions: {
+              apiRoute: 'apiRoutes.qbuilder.layouts',
+              select: {label: 'title', id: 'id'},
+              requestParams: {
+                filter: {
+                  type: 'general',
+                  entity_type: "Modules\\Iblog\\Entities\\Category"
+                }
+              }
             }
           },
           showMenu: {

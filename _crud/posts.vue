@@ -257,7 +257,6 @@ export default {
               apiRoute: 'apiRoutes.qblog.statuses'
             }
           },
-
           sortOrder: {
             value: '0',
             type: 'input',
@@ -285,6 +284,31 @@ export default {
               hideDropdownIcon: true,
               inputDebounce: "0",
               newValueMode: "add-unique"
+            }
+          },
+          layoutType: {
+            name: 'type',
+            value: 'general',
+            fakeFieldName: 'buildable',
+          },
+          layoutBuilder: {
+            value: null,
+            type: 'select',
+            name: 'layoutId',
+            fakeFieldName: 'buildable',
+            props: {
+              label: this.$tr('ibuilder.cms.form.layout'),
+              clearable: true,
+            },
+            loadOptions: {
+              apiRoute: 'apiRoutes.qbuilder.layouts',
+              select: {label: 'title', id: 'id'},
+              requestParams: {
+                filter: {
+                  type: 'general',
+                  entity_type: "Modules\\Iblog\\Entities\\Post"
+                }
+              }
             }
           },
           featured: {
