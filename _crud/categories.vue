@@ -118,15 +118,15 @@ export default {
         },
         formRight: {
           status: {
-            value: 1,
-            type: 'treeSelect',
+            value: "1",
+            type: 'select',
             isTranslatable: true,
             props: {
               label: `${this.$tr('isite.cms.form.status')}`,
-              clearable : false,
+              clearable: false,
               options: [
-                {label: this.$tr('isite.cms.label.enabled'), id: 1},
-                {label: this.$tr('isite.cms.label.disabled'), id: 0}
+                {label: this.$tr('isite.cms.label.enabled'), value: "1"},
+                {label: this.$tr('isite.cms.label.disabled'), value: "0"}
               ]
             }
           },
