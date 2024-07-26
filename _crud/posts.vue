@@ -14,7 +14,6 @@ export default {
         apiRoute: 'apiRoutes.qblog.posts',
         permission: 'iblog.posts',
         extraFormFields: 'iblog.crud-fields.posts',
-        path: "Modules\\Iblog\\Entities\\Post",
         create: {
           title: this.$tr('iblog.cms.newPost'),
         },
