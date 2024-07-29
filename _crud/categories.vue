@@ -59,7 +59,7 @@ export default {
         },
         update: {
           title: this.$tr('iblog.cms.updateCategory'),
-          requestParams: {include: 'parent'}
+          requestParams: {include: 'parent,buildable'}
         },
         delete: true,
         formLeft: {

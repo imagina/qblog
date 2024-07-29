@@ -83,7 +83,7 @@ export default {
         },
         update: {
           title: this.$tr('iblog.cms.updatePost'),
-          requestParams: {include: 'categories'}
+          requestParams: {include: 'categories,buildable'}
         },
         delete: true,
         formLeft: {
