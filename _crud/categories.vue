@@ -21,7 +21,7 @@ export default {
         read: {
           columns: [
             {name: 'id', label: this.$tr('isite.cms.form.id'), field: 'id', style: 'width: 50px'},
-            {name: 'name', label: this.$tr('isite.cms.form.title'), field: 'title', align: 'rigth'},
+            {name: 'title', label: this.$tr('isite.cms.form.title'), field: 'title', align: 'rigth'},
             {name: 'slug', label: this.$tr('isite.cms.form.slug'), field: 'slug', align: 'left'},
             {
               name: 'status',
@@ -40,7 +40,7 @@ export default {
             },
             {name: 'actions', label: this.$tr('isite.cms.form.actions'), align: 'left'},
           ],
-          requestParams: {include: 'parent,qrs'},
+          requestParams: {include: 'parent,qrs,translations'},
           filters: {
             parentId: {
               value: null,
@@ -57,7 +57,7 @@ export default {
         },
         update: {
           title: this.$tr('iblog.cms.updateCategory'),
-          requestParams: {include: 'parent,buildable'}
+          requestParams: {include: 'parent,buildable,translations'}
         },
         delete: true,
         formLeft: {
