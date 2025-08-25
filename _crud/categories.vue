@@ -177,7 +177,7 @@ export default {
               requestParams: {
                 filter: {
                   type: 'general',
-                  entity_type: "Modules\\Iblog\\Entities\\Category"
+                  entity_type: "Modules\\Iblog\\Models\\Category"
                 }
               }
             }
@@ -224,7 +224,7 @@ export default {
             props: {
               label: this.$tr('isite.cms.form.firstImage'),
               zone: 'mainimage',
-              entity: "Modules\\Iblog\\Entities\\Category",
+              entity: "Modules\\Iblog\\Models\\Category",
               entityId: null
             }
           },
@@ -235,7 +235,7 @@ export default {
             props: {
               label: this.$tr('isite.cms.form.secondaryImage'),
               zone: 'secondaryimage',
-              entity: "Modules\\Iblog\\Entities\\Category",
+              entity: "Modules\\Iblog\\Models\\Category",
               entityId: null
             }
           }

@@ -173,7 +173,7 @@ export default {
             props: {
               label: this.$tr('isite.cms.form.gallery'),
               zone: 'gallery',
-              entity: "Modules\\Iblog\\Entities\\Post",
+              entity: "Modules\\Iblog\\Models\\Post",
               entityId: null
             }
           },
@@ -306,7 +306,7 @@ export default {
               requestParams: {
                 filter: {
                   type: 'general',
-                  entity_type: "Modules\\Iblog\\Entities\\Post"
+                  entity_type: "Modules\\Iblog\\Models\\Post"
                 }
               }
             }
@@ -326,7 +326,7 @@ export default {
             props: {
               label: this.$tr('isite.cms.form.image'),
               zone: 'mainimage',
-              entity: "Modules\\Iblog\\Entities\\Post",
+              entity: "Modules\\Iblog\\Models\\Post",
               entityId: null
             }
           }
