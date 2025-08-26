@@ -56,7 +56,7 @@ export default {
               name: 'actions', label: this.$tr('isite.cms.form.actions'), align: 'center'
             },
           ],
-          requestParams: {include: 'category,qrs'},
+          requestParams: {include: 'category,qrs,translations'},
           filters: {
             categories: {
               value: null,
@@ -83,7 +83,7 @@ export default {
         },
         update: {
           title: this.$tr('iblog.cms.updatePost'),
-          requestParams: {include: 'categories,buildable'}
+          requestParams: {include: 'categories,buildable,translations'}
         },
         delete: true,
         formLeft: {
@@ -204,7 +204,7 @@ export default {
                 ],
               },
               config: {
-                options: {label: 'fullName', value: 'id'},
+                options: {label: 'firstName', value: 'id'},
                 requestParams: {filter: {roleSlug: 'author'}}
               },
             },
@@ -217,7 +217,7 @@ export default {
               crudData: import('modules/qblog/_crud/categories'),
               customData: {
                 read: {
-                  requestParams: {include: 'parent', filter: {status: 1}}
+                  requestParams: {include: 'parent,translations', filter: {status: 1}}
                 }
               },
               crudProps: {
@@ -236,7 +236,7 @@ export default {
               crudData: import('modules/qblog/_crud/categories'),
               customData: {
                 read: {
-                  requestParams: {include: 'parent', filter: {status: 1}}
+                  requestParams: {include: 'parent,translations', filter: {status: 1}}
                 }
               },
               crudProps: {
@@ -284,31 +284,6 @@ export default {
               hideDropdownIcon: true,
               inputDebounce: "0",
               newValueMode: "add-unique"
-            }
-          },
-          layoutType: {
-            name: 'type',
-            value: 'general',
-            fakeFieldName: 'buildable',
-          },
-          layoutBuilder: {
-            value: null,
-            type: 'select',
-            name: 'layoutId',
-            fakeFieldName: 'buildable',
-            props: {
-              label: this.$tr('ibuilder.cms.form.layout'),
-              clearable: true,
-            },
-            loadOptions: {
-              apiRoute: 'apiRoutes.qbuilder.layouts',
-              select: {label: 'title', id: 'id'},
-              requestParams: {
-                filter: {
-                  type: 'general',
-                  entity_type: "Modules\\Iblog\\Models\\Post"
-                }
-              }
             }
           },
           featured: {
