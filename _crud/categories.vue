@@ -156,32 +156,7 @@ export default {
               select: {label: 'title', id: 'id'},
               requestParams: {include: 'parent', filter: {status: 1}}
             }
-          },
-          layoutType: {
-            name: 'type',
-            value: 'general',
-            fakeFieldName: 'buildable',
-          },
-          layoutBuilder: {
-            value: null,
-            type: 'select',
-            name: 'layoutId',
-            fakeFieldName: 'buildable',
-            props: {
-              label: this.$tr('ibuilder.cms.form.layout'),
-              clearable: true,
-            },
-            loadOptions: {
-              apiRoute: 'apiRoutes.qbuilder.layouts',
-              select: {label: 'title', id: 'id'},
-              requestParams: {
-                filter: {
-                  type: 'general',
-                  entity_type: "Modules\\Iblog\\Models\\Category"
-                }
-              }
-            }
-          },
+          },          
           showMenu: {
             value: false,
             type: 'checkbox',
