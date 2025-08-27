@@ -65,7 +65,8 @@ export default {
                 label: this.$tr('isite.cms.label.category')
               },
               loadOptions: {
-                apiRoute: 'apiRoutes.qblog.categories'
+                apiRoute: 'apiRoutes.qblog.categories',
+                requestParams: {include: 'translations'}
               }
             },
             status: {
