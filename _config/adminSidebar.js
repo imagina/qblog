@@ -8,7 +8,6 @@ export default [
     children: [
       pages.qblog.posts, // posts setup
       pages.qblog.categories, // categories setup
-      pages.qblog.postsInternal, // Post internal
     ]
   },
 ]

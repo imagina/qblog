@@ -28,19 +28,5 @@ export default {
     subHeader: {
       refresh: true,
     }
-  },
-  postsInternal: {
-    permission: 'iblog.posts.manage',
-    activated: true,
-    authenticated: true,
-    path: '/blog/posts/internal',
-    name: 'qblog.admin.posts.internal',
-    page: () => import('modules/qblog/_pages/admin/posts/internal'),
-    layout: () => import('layouts/master.vue'),
-    title: 'iblog.cms.sidebar.adminPostsInternal',
-    icon: 'fa-light fa-newspaper',
-    subHeader: {
-      refresh: true,
-    }
-  },
+  }  
 }
