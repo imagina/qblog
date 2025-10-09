@@ -154,9 +154,9 @@ export default {
             loadOptions: {
               apiRoute: 'apiRoutes.qblog.categories',
               select: {label: 'title', id: 'id'},
-              requestParams: {include: 'parent', filter: {status: 1}}
+              requestParams: {include: 'parent,translations', filter: {status: 1}}
             }
-          },          
+          },
           showMenu: {
             value: false,
             type: 'checkbox',

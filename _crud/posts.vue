@@ -39,8 +39,9 @@ export default {
             {
               name: 'statusName',
               label: this.$tr('isite.cms.form.status'),
-              field: 'statusName',
-              align: 'left', sortable: true
+              field: 'status',
+              align: 'left', sortable: true,
+              format: val => val.title ?? '-'
             },
             {
               name: 'category', label: this.$tr('isite.cms.form.category'),
@@ -56,7 +57,7 @@ export default {
               name: 'actions', label: this.$tr('isite.cms.form.actions'), align: 'center'
             },
           ],
-          requestParams: {include: 'category,qrs,translations'},
+          requestParams: {include: 'category.translations,qrs,translations'},
           filters: {
             categories: {
               value: null,
