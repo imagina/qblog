@@ -40,7 +40,7 @@ export default {
             },
             {name: 'actions', label: this.$tr('isite.cms.form.actions'), align: 'left'},
           ],
-          requestParams: {include: 'parent,qrs,translations'},
+          requestParams: {include: 'parent.translations,qrs,translations'},
           filters: {
             parentId: {
               value: null,
@@ -50,7 +50,7 @@ export default {
               },
               loadOptions: {
                 apiRoute: 'apiRoutes.qblog.categories',
-                requestParams: {filter: {status: 1}}
+                requestParams: {include:'translations',filter: {status: 1}}
               }
             },
           }

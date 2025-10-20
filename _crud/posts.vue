@@ -59,7 +59,7 @@ export default {
           ],
           requestParams: {include: 'category.translations,qrs,translations'},
           filters: {
-            categories: {
+            categoryId: {
               value: null,
               type: 'treeSelect',
               props: {
@@ -70,7 +70,7 @@ export default {
                 requestParams: {include: 'translations'}
               }
             },
-            status: {
+            statusId: {
               value: null,
               type: 'select',
               props: {
@@ -248,7 +248,7 @@ export default {
               },
             },
           },
-          status: {
+          statusId: {
             value: '2',
             type: 'select',
             isTranslatable: true,
