@@ -192,21 +192,17 @@ export default {
             }
           },
           userId: {
-            value: null,
-            type: 'crud',
+            type: 'select',
             props: {
-              type: 'select',
-              crudData: import('modules/quser/_crud/users'),
-              crudProps: {
-                label: `${this.$tr('isite.cms.form.author')}*`,
-                rules: [
-                  val => !!val || this.$tr('isite.cms.message.fieldRequired')
-                ],
-              },
-              config: {
-                options: {label: 'fullName', value: 'id'},
-                requestParams: {filter: {roleSlug: 'author'}}
-              },
+              label: `${this.$tr('isite.cms.form.author')}*`,
+              rules: [
+                val => !!val || this.$tr('isite.cms.message.fieldRequired')
+              ],
+            },
+            loadOptions: {
+              apiRoute: 'apiRoutes.quser.users',
+              requestParams: {filter: {roleSlug: 'author'}},
+              select: {label: 'fullName', id: 'id'}
             },
           },
           categoryId: {
