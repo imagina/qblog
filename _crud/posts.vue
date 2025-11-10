@@ -192,7 +192,7 @@ export default {
             }
           },
           userId: {
-            value: parseInt(this.$store.state.quserAuth.userId),
+            value: null,
             type: 'crud',
             props: {
               type: 'select',
